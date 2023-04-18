@@ -1,0 +1,832 @@
+<div class="row">
+     <div class="col-sm-12"> 
+         <section class="display" id="af_d">
+                <div class="row">
+                     <div class="col-sm-6">
+                        <span style="position:relative;left:40%;top:160px;z-index:12;"class="text-white">
+                            <?php 
+                            require './controller/dbcon.php';
+                            $sql="SELECT location FROM property_range WHERE position='1' AND category='Affordable'";
+                            $stmt=$con->prepare($sql);
+                            $stmt->execute();
+                            $data=$stmt->fetchAll();
+                            foreach($data as $row){
+                                $location=$row['location'];
+                                
+
+                            }
+                            echo "<span class='font font_size_5 bg-transparent fw-bold'>$location</span>";
+
+                                            $sql="SELECT * FROM project_affordable_details WHERE location='$location'";
+                                            $stmt=$con->prepare($sql);
+                                            $stmt->execute();
+                                            $numrows=$stmt->rowCount();
+                                            echo "<br>";
+                                            echo "<span class='sel bg-warning' style='padding:5px; max-width:25%;text-align:center;'>$numrows &nbsp;PROPERTIES </span>";
+                                            
+                                            
+                                
+
+                            
+                            ?>
+                            </span>
+                        
+                        <?php 
+                            require './controller/dbcon.php';
+                            $sql="SELECT * FROM property_range WHERE position='1' AND category='Affordable'";
+                            $stmt=$con->prepare($sql);
+                            $stmt->execute();
+                            $data=$stmt->fetchAll();
+                            foreach($data as $row){
+                                $pic=$row['pic'];
+                                
+
+                            }
+                                
+                            
+                        
+                        
+                        ?>
+                        
+                        <img src="./project_range_images/<?php echo $pic;?>" class="w-100" style="height:394px">
+                        
+
+
+
+
+
+            </div>
+            <div class="col-sm-6">
+                <span style="position:relative;left:40%;top:160px;z-index:12;"class="text-white">
+                        <?php 
+                        require './controller/dbcon.php';
+                        $sql="SELECT location FROM property_range WHERE position='2' AND category='Affordable'";
+                        $stmt=$con->prepare($sql);
+                        $stmt->execute();
+                        $data=$stmt->fetchAll();
+                        foreach($data as $row){
+                            $location=$row['location'];
+                            
+
+                        }
+                        echo "<span class='font font_size_5 bg-transparent fw-bold'>$location</span>";
+
+                                        $sql="SELECT * FROM project_affordable_details WHERE location='$location'";
+                                        $stmt=$con->prepare($sql);
+                                        $stmt->execute();
+                                        $numrows=$stmt->rowCount();
+                                        echo "<br>";
+                                        echo "<span class='sel bg-warning' style='padding:5px;max-width:23%;text-align:center;'>$numrows &nbsp;PROPERTIES </span>";
+                                        
+                                        
+                            
+
+                        
+                        ?>
+                        </span>
+                    
+                    <?php 
+                        require './controller/dbcon.php';
+                        $sql="SELECT * FROM property_range WHERE position='2' AND category='Affordable'";
+                        $stmt=$con->prepare($sql);
+                        $stmt->execute();
+                        $data=$stmt->fetchAll();
+                        foreach($data as $row){
+                            $pic=$row['pic'];
+                            
+
+                        }
+                            
+                        
+                    
+                    
+                    ?>
+                    
+                    <img src="./project_range_images/<?php echo $pic;?>" class="w-100" style="height:394px">
+                    
+
+
+            </div>
+            <div class="w-100"></div>
+            <div class="col-sm-6 nopadding">
+                    <span style="position:relative;left:40%;top:160px;z-index:12;"class="text-white">
+                            <?php 
+                            require './controller/dbcon.php';
+                            $sql="SELECT location FROM property_range WHERE position='3' AND category='Affordable'";
+                            $stmt=$con->prepare($sql);
+                            $stmt->execute();
+                            $data=$stmt->fetchAll();
+                            foreach($data as $row){
+                                $location=$row['location'];
+                                
+
+                            }
+                            echo "<span class='font font_size_5 bg-transparent fw-bold'>$location</span>";
+
+                                            $sql="SELECT * FROM project_affordable_details WHERE location='$location'";
+                                            $stmt=$con->prepare($sql);
+                                            $stmt->execute();
+                                            $numrows=$stmt->rowCount();
+                                            echo "<br>";
+                                            echo "<span class='sel bg-warning' style='padding:5px;text-align:center;max-width:23%;'>$numrows &nbsp;PROPERTIES </span>";
+                                            
+                                            
+                                
+
+                            
+                            ?>
+                            </span>
+                        
+                        <?php 
+                            require './controller/dbcon.php';
+                            $sql="SELECT * FROM property_range WHERE position='3' AND category='Affordable'";
+                            $stmt=$con->prepare($sql);
+                            $stmt->execute();
+                            $data=$stmt->fetchAll();
+                            foreach($data as $row){
+                                $pic=$row['pic'];
+                                
+
+                            }
+                                
+                            
+                        
+                        
+                        ?>
+                        
+                        <img src="./project_range_images/<?php echo $pic;?>" class="w-100" style="height:394px; z-index:1;">
+                        
+
+
+
+
+
+            </div>
+            <div class="col-sm-6 nopadding">
+                <span style="position:relative;left:40%;top:160px;z-index:12;"class="text-white">
+                    <br>&nbsp;
+                    <a href="affordable.php" class="sel"  style="text-align:center;max-width:23%;padding:5px;text-decoration:none;color:white;background-color:darkorange;border-radius:11px 11px 11px 11px;"> More&#129138;</a>
+
+
+                        
+                </span>
+                <?php 
+                                require './controller/dbcon.php';
+                                $sql="SELECT * FROM property_range WHERE position='4' AND category='Affordable'";
+                                $stmt=$con->prepare($sql);
+                                $stmt->execute();
+                                $data=$stmt->fetchAll();
+                                foreach($data as $row){
+                                    $pic=$row['pic'];
+                                    
+
+                                }
+                                    
+                                
+                            
+                            
+                            ?>
+                            
+                            <img src="./project_range_images/<?php echo $pic;?>" class="w-100" style="height:394px">
+                            
+
+
+
+
+
+
+
+            </div>
+            
+            
+            
+            
+        </div>
+         &nbsp;
+
+         </section>
+         <section class="display non_aff" id="rtm_d">
+                <div class="row">
+            <div class="col-sm-6">
+            <section class="display left_right" id="rm_d">
+                       <span style="position:relative;left:40%;top:160px;z-index:12;"class="text-white">
+                        <?php 
+                        require './controller/dbcon.php';
+                        $sql="SELECT location FROM property_range WHERE position='2' AND category='Ready-To-Move-In'";
+                        $stmt=$con->prepare($sql);
+                        $stmt->execute();
+                        $data=$stmt->fetchAll();
+                        foreach($data as $row){
+                            $location=$row['location'];
+                            
+
+                        }
+                        echo "<span class='font font_size_5 bg-transparent fw-bold'>$location</span>";
+
+                                        $sql="SELECT * FROM project_readytomovein_details WHERE location='$location'";
+                                        $stmt=$con->prepare($sql);
+                                        $stmt->execute();
+                                        $numrows=$stmt->rowCount();
+                                        echo "<br>";
+                                        echo "<span class='sel bg-warning' style='padding:5px;'>$numrows &nbsp;PROPERTIES </span>";
+                                        
+                                        
+                            
+
+                        
+                        ?>
+                        </span>
+                    
+                       <?php 
+                        require './controller/dbcon.php';
+                        $sql="SELECT * FROM property_range WHERE position='2' AND category='Ready-To-Move-In'";
+                        $stmt=$con->prepare($sql);
+                        $stmt->execute();
+                        $data=$stmt->fetchAll();
+                        foreach($data as $row){
+                            $pic=$row['pic'];
+                            
+
+                        }
+                            
+                        
+                    
+                    
+                    ?>
+                    
+                    <img src="./project_range_images/<?php echo $pic;?>" class="w-100" style="height:394px">
+                    
+       
+       
+         </section>
+                    
+                    
+
+
+
+            </div>
+            <div class="col-sm-6">
+                <span style="position:relative;left:40%;top:160px;z-index:12;"class="text-white">
+                        <?php 
+                        require './controller/dbcon.php';
+                        $sql="SELECT location FROM property_range WHERE position='2' AND category='Ready-To-Move-In'";
+                        $stmt=$con->prepare($sql);
+                        $stmt->execute();
+                        $data=$stmt->fetchAll();
+                        foreach($data as $row){
+                            $location=$row['location'];
+                            
+
+                        }
+                        echo "<span class='font font_size_5 bg-transparent fw-bold'>$location</span>";
+
+                                        $sql="SELECT * FROM project_readytomovein_details WHERE location='$location'";
+                                        $stmt=$con->prepare($sql);
+                                        $stmt->execute();
+                                        $numrows=$stmt->rowCount();
+                                        echo "<br>";
+                                        echo "<span class='sel bg-warning' style='padding:5px;'>$numrows &nbsp;PROPERTIES </span>";
+                                        
+                                        
+                            
+
+                        
+                        ?>
+                        </span>
+                    
+                    <?php 
+                        require './controller/dbcon.php';
+                        $sql="SELECT * FROM property_range WHERE position='2' AND category='Ready-To-Move-In'";
+                        $stmt=$con->prepare($sql);
+                        $stmt->execute();
+                        $data=$stmt->fetchAll();
+                        foreach($data as $row){
+                            $pic=$row['pic'];
+                            
+
+                        }
+                            
+                        
+                    
+                    
+                    ?>
+                    
+                    <img src="./project_range_images/<?php echo $pic;?>" class="w-100" style="height:394px">
+                    
+
+
+            </div>
+            <div class="w-100"></div>
+            <div class="col-sm-6">
+                    <span style="position:relative;left:40%;top:160px;z-index:12;"class="text-white">
+                            <?php 
+                            require './controller/dbcon.php';
+                            $sql="SELECT location FROM property_range WHERE position='3' AND category='Ready-To-Move-In'";
+                            $stmt=$con->prepare($sql);
+                            $stmt->execute();
+                            $data=$stmt->fetchAll();
+                            foreach($data as $row){
+                                $location=$row['location'];
+                                
+
+                            }
+                            echo "<span class='font font_size_5 bg-transparent fw-bold'>$location</span>";
+
+                                            $sql="SELECT * FROM project_readytomovein_details WHERE location='$location'";
+                                            $stmt=$con->prepare($sql);
+                                            $stmt->execute();
+                                            $numrows=$stmt->rowCount();
+                                            echo "<br>";
+                                            echo "<span class='sel bg-warning' style='padding:5px;'>$numrows &nbsp;PROPERTIES </span>";
+                                            
+                                            
+                                
+
+                            
+                            ?>
+                            </span>
+                        
+                        <?php 
+                            require './controller/dbcon.php';
+                            $sql="SELECT * FROM property_range WHERE position='3' AND category='Ready-To-Move-In'";
+                            $stmt=$con->prepare($sql);
+                            $stmt->execute();
+                            $data=$stmt->fetchAll();
+                            foreach($data as $row){
+                                $pic=$row['pic'];
+                                
+
+                            }
+                                
+                            
+                        
+                        
+                        ?>
+                        
+                        <img src="./project_range_images/<?php echo $pic;?>" class="w-100" style="height:394px; z-index:1;">
+                        
+
+
+
+
+
+            </div>
+            <div class="col-sm-6">
+                <span style="position:relative;left:40%;top:160px;z-index:12;"class="text-white">
+                    <br>&nbsp;
+                    <a href="readytomovein.php" class="sel"  style="padding:5px;text-decoration:none;color:white;background-color:darkorange;border-radius:11px 11px 11px 11px;"> More&#129138;</a>
+
+
+                        
+                </span>
+                <?php 
+                                require './controller/dbcon.php';
+                                $sql="SELECT * FROM property_range WHERE position='4' AND category='Ready-To-Move-In'";
+                                $stmt=$con->prepare($sql);
+                                $stmt->execute();
+                                $data=$stmt->fetchAll();
+                                foreach($data as $row){
+                                    $pic=$row['pic'];
+                                    
+
+                                }
+                                    
+                                
+                            
+                            
+                            ?>
+                            
+                            <img src="./project_range_images/<?php echo $pic;?>" class="w-100" style="height:394px">
+                            
+
+
+
+
+
+
+
+            </div>
+            
+            
+            
+            
+        </div>
+
+         </section>
+         &nbsp;
+         <section class="display non_aff" id="cm_d">
+                <div class="row">
+            <div class="col-sm-6">
+                    <span style="position:relative;left:40%;top:160px;z-index:12;"class="text-white">
+                            <?php 
+                            require './controller/dbcon.php';
+                            $sql="SELECT location FROM property_range WHERE position='1' AND category='Commercial'";
+                            $stmt=$con->prepare($sql);
+                            $stmt->execute();
+                            $data=$stmt->fetchAll();
+                            foreach($data as $row){
+                                $location=$row['location'];
+                                
+
+                            }
+                            echo "<span class='font font_size_5 bg-transparent fw-bold'>$location</span>";
+
+                                            $sql="SELECT * FROM project_commercial_details WHERE location='$location'";
+                                            $stmt=$con->prepare($sql);
+                                            $stmt->execute();
+                                            $numrows=$stmt->rowCount();
+                                            echo "<br>";
+                                            echo "<span class='sel bg-warning' style='padding:5px;'>$numrows &nbsp;PROPERTIES </span>";
+                                            
+                                            
+                                
+
+                            
+                            ?>
+                            </span>
+                        
+                        <?php 
+                            require './controller/dbcon.php';
+                            $sql="SELECT * FROM property_range WHERE position='1' AND category='Commercial'";
+                            $stmt=$con->prepare($sql);
+                            $stmt->execute();
+                            $data=$stmt->fetchAll();
+                            foreach($data as $row){
+                                $pic=$row['pic'];
+                                
+
+                            }
+                                
+                            
+                        
+                        
+                        ?>
+                        
+                        <img src="./project_range_images/<?php echo $pic;?>" class="w-100" style="height:394px">
+                        
+
+
+
+
+
+            </div>
+            <div class="col-sm-6">
+                <span style="position:relative;left:40%;top:160px;z-index:12;"class="text-white">
+                        <?php 
+                        require './controller/dbcon.php';
+                        $sql="SELECT location FROM property_range WHERE position='2' AND category='Commercial'";
+                        $stmt=$con->prepare($sql);
+                        $stmt->execute();
+                        $data=$stmt->fetchAll();
+                        foreach($data as $row){
+                            $location=$row['location'];
+                            
+
+                        }
+                        echo "<span class='font font_size_5 bg-transparent fw-bold'>$location</span>";
+
+                                        $sql="SELECT * FROM project_commercial_details WHERE location='$location'";
+                                        $stmt=$con->prepare($sql);
+                                        $stmt->execute();
+                                        $numrows=$stmt->rowCount();
+                                        echo "<br>";
+                                        echo "<span class='sel bg-warning' style='padding:5px;'>$numrows &nbsp;PROPERTIES </span>";
+                                        
+                                        
+                            
+
+                        
+                        ?>
+                        </span>
+                    
+                    <?php 
+                        require './controller/dbcon.php';
+                        $sql="SELECT * FROM property_range WHERE position='2' AND category='Commercial'";
+                        $stmt=$con->prepare($sql);
+                        $stmt->execute();
+                        $data=$stmt->fetchAll();
+                        foreach($data as $row){
+                            $pic=$row['pic'];
+                            
+
+                        }
+                            
+                        
+                    
+                    
+                    ?>
+                    
+                    <img src="./project_range_images/<?php echo $pic;?>" class="w-100" style="height:394px">
+                    
+
+
+            </div>
+            <div class="w-100"></div>
+            <div class="col-sm-6">
+                    <span style="position:relative;left:40%;top:160px;z-index:12;"class="text-white">
+                            <?php 
+                            require './controller/dbcon.php';
+                            $sql="SELECT location FROM property_range WHERE position='3' AND category='Commercial'";
+                            $stmt=$con->prepare($sql);
+                            $stmt->execute();
+                            $data=$stmt->fetchAll();
+                            foreach($data as $row){
+                                $location=$row['location'];
+                                
+
+                            }
+                            echo "<span class='font font_size_5 bg-transparent fw-bold'>$location</span>";
+
+                                            $sql="SELECT * FROM project_commercial_details WHERE location='$location'";
+                                            $stmt=$con->prepare($sql);
+                                            $stmt->execute();
+                                            $numrows=$stmt->rowCount();
+                                            echo "<br>";
+                                            echo "<span class='sel bg-warning' style='padding:5px;'>$numrows &nbsp;PROPERTIES </span>";
+                                            
+                                            
+                                
+
+                            
+                            ?>
+                            </span>
+                        
+                        <?php 
+                            require './controller/dbcon.php';
+                            $sql="SELECT * FROM property_range WHERE position='3' AND category='Commercial'";
+                            $stmt=$con->prepare($sql);
+                            $stmt->execute();
+                            $data=$stmt->fetchAll();
+                            foreach($data as $row){
+                                $pic=$row['pic'];
+                                
+
+                            }
+                                
+                            
+                        
+                        
+                        ?>
+                        
+                        <img src="./project_range_images/<?php echo $pic;?>" class="w-100" style="height:394px; z-index:1;">
+                        
+
+
+
+
+
+            </div>
+            <div class="col-sm-6">
+                <span style="position:relative;left:40%;top:160px;z-index:12;"class="text-white">
+                    <br>&nbsp;
+                    <a href="commercial.php" class="sel"  style="padding:5px;text-decoration:none;color:white;background-color:darkorange;border-radius:11px 11px 11px 11px;"> More&#129138;</a>
+
+
+                        
+                </span>
+                <?php 
+                                require './controller/dbcon.php';
+                                $sql="SELECT * FROM property_range WHERE position='4' AND category='Commercial'";
+                                $stmt=$con->prepare($sql);
+                                $stmt->execute();
+                                $data=$stmt->fetchAll();
+                                foreach($data as $row){
+                                    $pic=$row['pic'];
+                                    
+
+                                }
+                                    
+                                
+                            
+                            
+                            ?>
+                            
+                            <img src="./project_range_images/<?php echo $pic;?>" class="w-100" style="height:394px">
+                            
+
+
+
+
+
+
+
+            </div>
+            
+            
+            
+            
+        </div>
+
+         </section>
+         &nbsp;
+         <section class="display non_aff" id="uc_d">
+                <div class="row">
+            <div class="col-sm-6">
+                    <span style="position:relative;left:40%;top:160px;z-index:12;"class="text-white">
+                            <?php 
+                            require './controller/dbcon.php';
+                            $sql="SELECT location FROM property_range WHERE position='1' AND category='Under-Construction'";
+                            $stmt=$con->prepare($sql);
+                            $stmt->execute();
+                            $data=$stmt->fetchAll();
+                            foreach($data as $row){
+                                $location=$row['location'];
+                                
+
+                            }
+                            echo "<span class='font font_size_5 bg-transparent fw-bold'>$location</span>";
+
+                                            $sql="SELECT * FROM project_underconstruction_details WHERE location='$location'";
+                                            $stmt=$con->prepare($sql);
+                                            $stmt->execute();
+                                            $numrows=$stmt->rowCount();
+                                            echo "<br>";
+                                            echo "<span class='sel bg-warning' style='padding:5px;'>$numrows &nbsp;PROPERTIES </span>";
+                                            
+                                            
+                                
+
+                            
+                            ?>
+                            </span>
+                        
+                        <?php 
+                            require './controller/dbcon.php';
+                            $sql="SELECT * FROM property_range WHERE position='1' AND category='Under-Construction'";
+                            $stmt=$con->prepare($sql);
+                            $stmt->execute();
+                            $data=$stmt->fetchAll();
+                            foreach($data as $row){
+                                $pic=$row['pic'];
+                                
+
+                            }
+                                
+                            
+                        
+                        
+                        ?>
+                        
+                        <img src="./project_range_images/<?php echo $pic;?>" class="w-100" style="height:394px">
+                        
+
+
+
+
+
+            </div>
+            <div class="col-sm-6">
+                <span style="position:relative;left:40%;top:160px;z-index:12;"class="text-white">
+                        <?php 
+                        require './controller/dbcon.php';
+                        $sql="SELECT location FROM property_range WHERE position='2' AND category='Under-Construction'";
+                        $stmt=$con->prepare($sql);
+                        $stmt->execute();
+                        $data=$stmt->fetchAll();
+                        foreach($data as $row){
+                            $location=$row['location'];
+                            
+
+                        }
+                        echo "<span class='font font_size_5 bg-transparent fw-bold'>$location</span>";
+
+                                        $sql="SELECT * FROM project_underconstruction_details WHERE location='$location'";
+                                        $stmt=$con->prepare($sql);
+                                        $stmt->execute();
+                                        $numrows=$stmt->rowCount();
+                                        echo "<br>";
+                                        echo "<span class='sel bg-warning' style='padding:5px;'>$numrows &nbsp;PROPERTIES </span>";
+                                        
+                                        
+                            
+
+                        
+                        ?>
+                        </span>
+                    
+                    <?php 
+                        require './controller/dbcon.php';
+                        $sql="SELECT * FROM property_range WHERE position='2' AND category='Under-Construction'";
+                        $stmt=$con->prepare($sql);
+                        $stmt->execute();
+                        $data=$stmt->fetchAll();
+                        foreach($data as $row){
+                            $pic=$row['pic'];
+                            
+
+                        }
+                            
+                        
+                    
+                    
+                    ?>
+                    
+                    <img src="./project_range_images/<?php echo $pic;?>" class="w-100" style="height:394px">
+                    
+
+
+            </div>
+            <div class="w-100"></div>
+            <div class="col-sm-6">
+                    <span style="position:relative;left:40%;top:160px;z-index:12;"class="text-white">
+                            <?php 
+                            require './controller/dbcon.php';
+                            $sql="SELECT location FROM property_range WHERE position='3' AND category='Under-Construction'";
+                            $stmt=$con->prepare($sql);
+                            $stmt->execute();
+                            $data=$stmt->fetchAll();
+                            foreach($data as $row){
+                                $location=$row['location'];
+                                
+
+                            }
+                            echo "<span class='font font_size_5 bg-transparent fw-bold'>$location</span>";
+
+                                            $sql="SELECT * FROM project_underconstruction_details WHERE location='$location'";
+                                            $stmt=$con->prepare($sql);
+                                            $stmt->execute();
+                                            $numrows=$stmt->rowCount();
+                                            echo "<br>";
+                                            echo "<span class='sel bg-warning' style='padding:5px;'>$numrows &nbsp;PROPERTIES </span>";
+                                            
+                                            
+                                
+
+                            
+                            ?>
+                            </span>
+                        
+                        <?php 
+                            require './controller/dbcon.php';
+                            $sql="SELECT * FROM property_range WHERE position='3' AND category='Under-Construction'";
+                            $stmt=$con->prepare($sql);
+                            $stmt->execute();
+                            $data=$stmt->fetchAll();
+                            foreach($data as $row){
+                                $pic=$row['pic'];
+                                
+
+                            }
+                                
+                            
+                        
+                        
+                        ?>
+                        
+                        <img src="./project_range_images/<?php echo $pic;?>" class="w-100" style="height:394px; z-index:1;">
+                        
+
+
+
+
+
+            </div>
+            <div class="col-sm-6">
+                <span style="position:relative;left:40%;top:160px;z-index:12;"class="text-white">
+                    <br>&nbsp;
+                    <a href="underconstruction.php" class="sel" style="padding:5px;text-decoration:none;color:white;background-color:darkorange;border-radius:11px 11px 11px 11px;"> More&#129138;</a>
+
+
+                        
+                </span>
+                <?php 
+                                require './controller/dbcon.php';
+                                $sql="SELECT * FROM property_range WHERE position='4' AND category='Under-Construction'";
+                                $stmt=$con->prepare($sql);
+                                $stmt->execute();
+                                $data=$stmt->fetchAll();
+                                foreach($data as $row){
+                                    $pic=$row['pic'];
+                                    
+
+                                }
+                                    
+                                
+                            
+                            
+                            ?>
+                            
+                            <img src="./project_range_images/<?php echo $pic;?>" class="w-100" style="height:394px">
+                            
+
+
+
+
+
+
+
+            </div>
+            
+            
+            
+            
+        </div>
+
+         </section>  
+     </div>
+
+
+
+
+
+</div>

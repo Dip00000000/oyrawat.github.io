@@ -1,0 +1,109 @@
+</*
+                            <!--Next Pic-->                
+                                          
+                             <div class="swiper-slide">
+                                 <div class="card text-center">
+                                     <div class="card-body">
+                                       <img src="general_images/residential.png">
+                                     </div>
+                                     <div class="card-footer">
+                                         <span class="font font_size_3 w-50" style="float:left;">
+                                         Smart World Sector 113 <br>
+                                         by Smart World Developers
+                                         </span>
+                                         <span class="font font_size_3 w-50" style="float:left;">
+                                         2/3/4 BHK <br>
+                                         <button style="border:none;background-color:darkblue;color:lightblue;">Rs 70 Lakhs*</button>
+                                         </span>
+
+                                     </div>
+
+                                 </div>
+                            
+                             </div>
+                             <!--Next Pic-->
+
+
+                             <div class="swiper-slide">
+                                 <div class="card text-center">
+                                     <div class="card-body">
+                                       <img src="general_images/commercial.png">
+                                     </div>
+                                     <div class="card-footer">
+                                         <span class="font font_size_3 w-50" style="float:left;">
+                                         Smart World Sector 113 <br>
+                                         by Smart World Developers
+                                         </span>
+                                         <span class="font font_size_3 w-50" style="float:left;">
+                                         2/3/4 BHK <br>
+                                         <button style="border:none;background-color:darkblue;color:lightblue;">Rs 70 Lakhs*</button>
+                                         </span>
+
+                                     </div>
+
+                                 </div>
+                             </div>
+                             <!--Next Pic-->
+                             <div class="swiper-slide">
+                                 <div class="card text-center">
+                                     <div class="card-body">
+                                       <img src="general_images/builder.png">
+                                     </div>
+                                     <div class="card-footer">
+                                         <span class="font font_size_3 w-50" style="float:left;">
+                                         Smart World Sector 113 <br>
+                                         by Smart World Developers
+                                         </span>
+                                         <span class="font font_size_3 w-50" style="float:left;">
+                                         2/3/4 BHK <br>
+                                         <button style="border:none;background-color:darkblue;color:lightblue;">Rs 70 Lakhs*</button>
+                                         </span>
+
+                                     </div>
+
+                                 </div>
+                            </div>
+                             <!--Next Pic-->
+                          <div class="swiper-slide"><img src="general_images/residential.png"></div>
+                          <div class="swiper-slide"><img src="general_images/residential.png"></div>
+                          <div class="swiper-slide"><img src="general_images/residential.png"></div>
+                          <div class="swiper-slide"><img src="general_images/residential.png"></div>
+                          <div class="swiper-slide"><img src="general_images/residential.png"></div>
+                     </div>
+                     */
+
+
+
+
+
+                     echo "<div class='swiper mySwiper'>
+                     <div class='swiper-wrapper'>
+                            <div class='swiper-slide'>
+                                 <div class='card text-center'>
+                                     <div class='card-body'>
+                                       <img src=$pic>
+                                     </div>
+                                     <div class='card-footer'>
+                                         <span class='font font_size_3 w-50' style='float:left;'>
+                                         Smart World Sector 113 <br>
+                                         by Smart World Developers
+                                         </span>
+                                         <span class='font font_size_3 w-50' style='float:left;'>
+                                         2/3/4 BHK <br>
+                                         <button style='border:none;background-color:darkblue;color:lightblue;'>Rs 70 Lakhs*</button>
+                                         </span>
+
+                                     </div>
+
+                                 </div>
+
+                            </div>
+
+                            
+                            
+
+                            
+                        <div class='swiper-button-next'></div>
+                        <div class='swiper-button-prev'></div>
+                        <div class='swiper-pagination'></div>
+                </div>";
